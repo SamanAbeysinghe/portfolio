@@ -14,6 +14,10 @@ const focusAreas = [
     detail: 'from multi-tenant chat widgets on AWS to fully offline assistants for private data.',
   },
   {
+    title: 'AI-assisted testing',
+    detail: 'a local-LLM QA platform that drafts test cases, checks its own output, and measures whether the AI helps.',
+  },
+  {
     title: 'Applied machine learning',
     detail: 'classification and prediction models in TensorFlow, including published research.',
   },

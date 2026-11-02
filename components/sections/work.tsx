@@ -2,6 +2,7 @@ import { Reveal } from '@/components/reveal'
 import { RagChatbotCard } from '@/components/projects/rag-chatbot-card'
 import { DocumentExtractionCard } from '@/components/projects/document-extraction-card'
 import { LocalRagCard } from '@/components/projects/local-rag-card'
+import { QaCopilotCard } from '@/components/projects/qa-copilot-card'
 import { LeafDeficiencyCard } from '@/components/projects/leaf-deficiency-card'
 import { DropoutPredictionCard } from '@/components/projects/dropout-prediction-card'
 import { SymptomCheckerCard } from '@/components/projects/symptom-checker-card'
@@ -17,11 +18,12 @@ export function Work() {
         </Reveal>
 
         <Reveal>
-        <p className={`mb-5 ${eyebrow}`}>Production systems</p>
+        <p className={`mb-5 ${eyebrow}`}>AI systems</p>
         <div className="flex flex-col gap-5">
           <RagChatbotCard />
           <DocumentExtractionCard />
           <LocalRagCard />
+          <QaCopilotCard />
         </div>
         </Reveal>
 

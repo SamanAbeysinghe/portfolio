@@ -21,12 +21,12 @@ export function CursorGlow() {
     let y = 0
     const paint = () => {
       frame = 0
-      el.style.background = `radial-gradient(600px circle at ${x}px ${y}px, var(--glow-accent), transparent 70%)`
+      el.style.background = `radial-gradient(260px circle at ${x}px ${y}px, var(--glow-accent), transparent 70%)`
     }
     const onMove = (e: PointerEvent) => {
       x = e.clientX
       y = e.clientY
-      el.style.opacity = '1'
+      el.style.opacity = '0.45'
       if (!frame) frame = requestAnimationFrame(paint)
     }
     const onLeave = () => {

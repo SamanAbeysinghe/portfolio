@@ -8,7 +8,7 @@ import { DropoutPredictionVisual } from '@/components/projects/dropout-predictio
 export function DropoutPredictionCard() {
   return (
     <ProjectCard
-      number="05"
+      number="06"
       metric="3-class outcome prediction"
       title="Student Dropout Prediction System"
       glow="var(--glow-violet)"

@@ -8,7 +8,7 @@ import { LeafDeficiencyVisual } from '@/components/projects/leaf-deficiency-visu
 export function LeafDeficiencyCard() {
   return (
     <ProjectCard
-      number="04"
+      number="05"
       metric="Image classification + diagnosis"
       title="Nutrient Deficiency Detection for Black Pepper Leaf"
       glow="var(--glow-accent)"

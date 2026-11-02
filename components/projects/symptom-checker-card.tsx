@@ -8,7 +8,7 @@ import { SymptomCheckerVisual } from '@/components/projects/symptom-checker-visu
 export function SymptomCheckerCard() {
   return (
     <ProjectCard
-      number="06"
+      number="07"
       metric="Symptom parsing + condition lookup"
       title="AI-Powered Health Symptom Checker"
       glow="var(--glow-cyan)"

@@ -4,6 +4,7 @@ const projects = [
   { name: 'RAG-Based Chatbot for WordPress', type: 'AI system', stack: ['Claude', 'Voyage AI', 'Qdrant', 'Flask', 'AWS'] },
   { name: 'Document & Handwriting Extraction', type: 'AI system', stack: ['YOLO', 'Claude', 'Bedrock', 'Next.js', 'Flask'] },
   { name: 'Fully Local, Private RAG', type: 'AI system', stack: ['Ollama', 'ChromaDB', 'React', 'Flask'] },
+  { name: 'QA Copilot: AI-Assisted Software Testing', type: 'AI system · MSc research', stack: ['Next.js', 'Flask', 'SQLite', 'Ollama'] },
   { name: 'Black Pepper Leaf Deficiency Detection', type: 'ML · published', stack: ['TensorFlow', 'Python', 'Flask'] },
   { name: 'Student Dropout Prediction', type: 'Machine learning', stack: ['TensorFlow', 'Python', 'Flask'] },
   { name: 'AI-Powered Health Symptom Checker', type: 'Machine learning', stack: ['TensorFlow', 'Python', 'Flask'] },

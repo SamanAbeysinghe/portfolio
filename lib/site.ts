@@ -17,9 +17,9 @@ export const socialLinks = [
 ]
 
 export const skillGroups = [
-  { label: 'LLMs & RAG', items: ['Claude', 'AWS Bedrock', 'Voyage AI', 'Qdrant', 'ChromaDB', 'Ollama'] },
+  { label: 'LLMs & RAG', items: ['Claude', 'AWS Bedrock', 'Voyage AI', 'Qdrant', 'ChromaDB', 'Ollama', 'Llama 3.1'] },
   { label: 'Document AI & Vision', items: ['YOLO', 'TensorFlow', 'OCR & handwriting extraction'] },
-  { label: 'Backend & Cloud', items: ['Python', 'Flask', 'Spring Boot', 'PostgreSQL', 'AWS SQS/SNS'] },
+  { label: 'Backend & Cloud', items: ['Python', 'Flask', 'Spring Boot', 'PostgreSQL', 'SQLite', 'AWS SQS/SNS'] },
   { label: 'Frontend', items: ['TypeScript', 'Next.js', 'React'] },
   { label: 'Embedded', items: ['C++', 'Micro-controllers', 'Simulation tools'] },
 ]
