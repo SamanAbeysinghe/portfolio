@@ -45,8 +45,12 @@ export function Contact() {
       setContactStatus("Message sent - I'll get back to you soon.")
       currentForm.reset()
     } catch {
+      const subject = encodeURIComponent(`Portfolio inquiry from ${name}`)
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)
+      const mailtoHref = `mailto:${contactEmail}?subject=${subject}&body=${body}`
       setContactError(true)
-      setContactStatus("Couldn't send that - please try emailing me directly instead.")
+      setContactStatus('The form is unavailable right now.')
+      window.location.href = mailtoHref
     } finally {
       setIsSubmitting(false)
     }
