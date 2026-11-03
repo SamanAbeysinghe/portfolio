@@ -10,7 +10,7 @@ import { navItems, socialLinks } from '@/lib/site'
 const sectionToNav: Record<string, string> = { skills: 'experience' }
 const watched = ['builds', 'experience', 'skills', 'about', 'contact']
 
-export function SiteNav() {
+export function SiteNav({ showBlog = false }: { showBlog?: boolean }) {
   const [menuOpen, setMenuOpen] = useState(false)
   const [active, setActive] = useState('')
 
@@ -60,6 +60,11 @@ export function SiteNav() {
                 {item.label}
               </a>
             ))}
+          {showBlog && (
+            <a href="/blog" className="text-[13px] text-ink-muted transition-colors hover:text-ink">
+              Writing
+            </a>
+          )}
 
           <ThemeToggle />
           <a
@@ -97,6 +102,11 @@ export function SiteNav() {
               {item.label}
             </a>
           ))}
+          {showBlog && (
+            <a href="/blog" onClick={() => setMenuOpen(false)} className="text-sm text-ink-muted transition-colors hover:text-ink">
+              Writing
+            </a>
+          )}
           <div className="flex items-center gap-4 border-t border-hairline pt-5">
             {socialLinks.map(({ label, href, Icon }) => (
               <a

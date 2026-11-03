@@ -10,12 +10,13 @@ import { ScrollProgress } from '@/components/scroll-progress'
 import { SiteFooter } from '@/components/site-footer'
 import { SiteNav } from '@/components/site-nav'
 import { SocialRail } from '@/components/social-rail'
+import { getAllPosts } from '@/lib/blog'
 import { WorkExperience } from '@/components/work-experience'
 
 export default function Page() {
   return (
     <main className="min-h-screen overflow-hidden bg-canvas text-ink">
-      <SiteNav />
+      <SiteNav showBlog={getAllPosts().length > 0} />
       <ScrollProgress />
       <CursorGlow />
       <Hero />
