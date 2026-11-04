@@ -60,11 +60,9 @@ export function SiteNav({ showBlog = false }: { showBlog?: boolean }) {
                 {item.label}
               </a>
             ))}
-          {showBlog && (
-            <a href="/blog" className="text-[13px] text-ink-muted transition-colors hover:text-ink">
-              Writing
-            </a>
-          )}
+          <a href="/blog" className="text-[13px] text-ink-muted transition-colors hover:text-ink">
+            Writing
+          </a>
 
           <ThemeToggle />
           <a
@@ -102,11 +100,9 @@ export function SiteNav({ showBlog = false }: { showBlog?: boolean }) {
               {item.label}
             </a>
           ))}
-          {showBlog && (
-            <a href="/blog" onClick={() => setMenuOpen(false)} className="text-sm text-ink-muted transition-colors hover:text-ink">
-              Writing
-            </a>
-          )}
+          <a href="/blog" onClick={() => setMenuOpen(false)} className="text-sm text-ink-muted transition-colors hover:text-ink">
+            Writing
+          </a>
           <div className="flex items-center gap-4 border-t border-hairline pt-5">
             {socialLinks.map(({ label, href, Icon }) => (
               <a
